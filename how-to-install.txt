@@ -1,0 +1,23 @@
+1. Make sure you have python and venv installed on your device, if not - install it.
+
+2. Open any folder, open console in it and run command "sudo python3 -m venv NameOfYourEnvironment", which will create virtual environment with name you put instead of NameOfYOurEnvironment.
+
+3. Copy the django-drf-react-quickstart catalog into catalog with your environment.
+
+4. Open console and go to /NameOfYourEnvironment/ and run "source bin/activate" to activate your environment
+
+5. Copy requirements.txt to /NameOfYourEnvironment/ folder and run "pip install -r requirements.txt"
+
+6. Open console and go to /NameOfYourEnvironment/ and run "source bin/activate" to activate your environment
+
+7. In console go to django-drf-react-quickstart catalog and run "npm i webpack webpack-cli --save-dev" or "yarn add webpack webpack-cli --dev"
+
+8. Run "pip install django djangorestframework" (if you don't have pip installed - install it)
+
+9. Go to /project/ catalog and run "yarn build", then "python manage.py runserver".
+
+10. That's it! You can open link from console and see the effect in your browser!
+
+Example login used in this app.
+Login: Recruiter1/Recruiter2/Recruiter3
+Password: Q@wertyuiop

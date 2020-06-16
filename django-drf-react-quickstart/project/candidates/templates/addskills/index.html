@@ -1,0 +1,40 @@
+{% csrf_token %}
+{% load static %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<link rel="stylesheet" href="{% static "skills/index.css" %}">
+<title>Rate {{person}}</title>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
+        <a class="navbar-brand mb-1" href="/">Your Future Best Worker</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="/">Home</a>
+            <a class="nav-item nav-link" href="/candidates/">Candidates</a>
+          </div>
+        </div>
+        {% if user.is_authenticated %}
+                <span class="align-items-end" style="color: black;">Hi {{user.first_name}} {{user.last_name}}<a class="btn btn-outline-white my-2 my-sm-0 ml-3" style="width: auto;" href="/logoutuser">Log out</a></span>
+              {% else %}
+              <a class="btn btn-outline-white my-2 my-sm-0 ml-3" style="width: auto; color: black;" href="/login">Log in</a>
+              {% endif %}
+      </nav>
+</header>
+
+{% if user.is_authenticated %}
+<div class="content">
+    <form  method="post">
+        {% csrf_token %}
+        <div class='w50'>
+            <h3>{{ person }}</h3>
+        {{ form }}
+        <input type="submit" value="Submit" class="btn btn-warning">
+        </div>
+    </form>
+</div>
+{% else %}
+<h1><i class="fas fa-ban"></i> You have no permision to be here.</h1>
+{% endif %}

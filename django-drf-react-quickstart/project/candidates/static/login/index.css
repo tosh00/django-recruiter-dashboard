@@ -1,0 +1,97 @@
+body {
+    background-color: #303030 !important;
+    color: #fff;
+    font-family: 'Arial';
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 200px;
+    
+}
+
+label {
+    margin-left: 20px;
+    margin-right: 5px;
+    font-weight: 700;
+}
+
+input {
+    box-shadow: 0 16px 28px 0 rgba(0, 0, 0, .22), 0 25px 55px 0 rgba(0, 0, 0, .21) !important;
+    margin-right: 5px;
+    background-color: #303030;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    transition: all 0.8s;
+}
+
+input:focus {
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15) !important;
+    background-color: #303030;
+    outline: none;
+}
+
+.btn {
+    box-shadow: 0 16px 28px 0 rgba(0, 0, 0, .22), 0 25px 55px 0 rgba(0, 0, 0, .21) !important;
+    padding: .40rem 1.10rem;
+    font-size: .81rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin: .375rem;
+    border: 0;
+    border-radius: .125rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: normal;
+    word-wrap: break-word;
+    color: inherit;
+}
+
+.btn-warning {
+    color: #212529;
+    background-color: #ffbf00;
+    border-color: #ffbf00;
+}
+
+input:-internal-autofill-selected {
+    background-color: #303030 !important;
+    background-image: none !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+nav {
+    background-color: #ffbf00 !important;
+    box-shadow: 0 16px 28px 0 rgba(0, 0, 0, .22), 0 25px 55px 0 rgba(0, 0, 0, .21);
+}
+
+.nav-link {
+    font-size: 18px;
+}
+
+h2 {
+    background-color: #ffbf00;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 25px;
+    color: black;
+    margin-bottom: 0 !important;
+}
+
+form {
+    color: white;
+    background-color: #424242;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    box-shadow: 0 16px 28px 0 rgba(0, 0, 0, .22), 0 25px 55px 0 rgba(0, 0, 0, .21) !important;
+}

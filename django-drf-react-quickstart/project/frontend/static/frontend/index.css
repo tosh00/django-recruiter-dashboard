@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Arial";
+    font-size: 18px;
+    color: #fff;
+}
+
+@media only screen and (max-width: 767px){
+    .custom-chart{
+        position: static!important;
+        width: auto!important;
+        transform: translateX(0)!important;
+    }
+}
+
+html{
+    overflow-y: auto;
+}
+
+html, body, #root, #root > div{
+    min-height: 100vh;
+}
+
+.dashboard{
+    margin: 0 auto;
+    width: 90%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul > li {
+    padding: 10px;
+}
+
+.jury, .people, .skills{
+    margin: 20px 0;
+    text-indent: 10px;
+}
+
+.custom-chart{
+    width: 30%;
+    transform: translateX(-10%);
+}
+
+.person-skill{
+    cursor: pointer;
+    transition: all 0.2s;
+    user-select: none;
+}
+
+.recruter{
+    cursor: pointer;
+    transition: all 0.2s;
+    user-select: none;
+}
+
+.custom-title{
+    font-weight: 900;
+    font-size: 24px;
+    padding: 20px 0;
+    position: relative;
+}
+
+.custom-title > span{
+    float: right;
+    margin: 0 20px;
+}
+
+.personId{
+    position: absolute;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 0 10px 0 0;
+}
+
+.personId > span{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    transition: 0.6 all;
+}
+
+.personRate{
+    float: right;
+}
+
+.chart-container{
+    height: 600px!important;
+}
+
+.drop-down{
+    cursor: pointer;
+    float: right;
+}
+
+.hole-rate{
+    width: calc(100% - 40px);
+    margin: 0;
+    float: left;
+    height: 20px;
+    display: block;
+    position: relative;
+}
+
+.hole-rate > div{
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+span.text{
+    position: absolute;
+    right: 15px;
+    font-size: 12px;
+}
+
+.wieghts i{
+    cursor: pointer;
+}
+
+.check{
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 2px 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btnn {
+    box-shadow: 0 16px 28px 0 rgba(0, 0, 0, .22), 0 25px 55px 0 rgba(0, 0, 0, .21) !important;
+    padding: .40rem 1.10rem;
+    font-size: .81rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin: .375rem;
+    border: 0;
+    border-radius: .125rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: normal;
+    word-wrap: break-word;
+    color: inherit;
+}
+
+.btnn-warning {
+    color: #212529;
+    background-color: #ffbf00;
+    border-color: #ffbf00;
+}
+
+nav {
+    background-color: #ffbf00 !important;
+    box-shadow: 0 16px 28px 0 rgba(0,0,0,.22),0 25px 55px 0 rgba(0,0,0,.21);
+}
+.nav-link {
+    font-size: 18px;
+}
+
+.navbar-brand {
+    margin-bottom: 0 !important;
+    min-height: 0 !important;
+    padding-top: 0;
+}

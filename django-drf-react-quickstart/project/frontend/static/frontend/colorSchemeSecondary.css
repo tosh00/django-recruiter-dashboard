@@ -1,0 +1,68 @@
+body{
+    background-color: #022c43;
+}
+
+.jury, .people, .skills{
+    background-color: #053f5e;
+    box-shadow: 0 16px 28px 0 rgba(0,0,0,.22),0 25px 55px 0 rgba(0,0,0,.21)!important;
+}
+
+.person-skill:hover{
+    background-color: #074b70;
+}
+
+.person-skill.active{
+    color: #ffd700;
+    background-color: #074b70;
+} 
+
+.recruter:hover{
+    background-color: #074b70;
+}
+
+.recruter.active{
+    color: #ffd700;
+    background-color: #074b70;
+} 
+
+.custom-title{
+    color: rgba(29, 29, 29, 0.897);
+    background-color: #ffd700;
+}
+
+.personId{
+    border: #303030 solid 3px;
+}
+
+.personId.active > span{
+    background-color: #ffd700;
+}
+
+.box-shadow{
+    box-shadow: 0 16px 28px 0 rgba(0,0,0,.22),0 25px 55px 0 rgba(0,0,0,.21);
+}
+
+.box-shadow-1{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+nav {
+    background-color: #ffd700 !important;
+    box-shadow: 0 16px 28px 0 rgba(0,0,0,.22),0 25px 55px 0 rgba(0,0,0,.21);
+}
+
+.hole-rate{
+    border: #303030 solid 1px;
+}
+
+.hole-rate > span{
+    background-color: #d31c1c;
+}
+
+.wieghts i{
+    color: #ffd700;
+}
+
+.hole-rate > span > span {
+    color: #fff;
+}
