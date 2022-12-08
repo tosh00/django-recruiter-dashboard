@@ -1,4 +1,4 @@
-certifi==2019.6.16
+certifi==2022.12.7
 Django==2.2.3
 djangorestframework==3.10.1
 pipenv==2018.11.26
